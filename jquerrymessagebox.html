@@ -1,0 +1,39 @@
+<html>
+
+    <head>    
+        <title>Jquery</title>   
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <div id="inclusive">
+            <div id="title" style="background-color:gray;height:70px; text-align: center;"><p style="text-align:center;font-size:2rem; display: inline-block;">Click to show/hide panel</p><p id="exit" style="float: right;">X</p></div>
+            <div id="togglediv" style="background-color: gray; padding-top:11px;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nemo modi
+                 laudantium voluptatem tempora dolore accusantium ratione id corrupti mollitia quod maxime officia deleniti dicta, doloribus recusandae. 
+                 Autem, placeat omnis.</p></div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('#title').click(function(){
+                    $('#togglediv').toggle('fast');
+                })
+
+
+
+                $('#exit').click(function(){
+                    $('#inclusive').hide('fast');
+                })
+            })
+        </script>
+
+    </body>
+
+
+
+
+
+</html>
